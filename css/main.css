@@ -1,0 +1,949 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/*ALL*/
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul a {
+    color: #727272;
+}
+
+ul a:hover {
+    color: #00c8c8;
+}
+
+button:hover {
+        border: none;
+        color: #ffffff;
+        background-color: #00c8c8;
+}
+
+.item-info span:hover {
+    color: #00c8c8;
+}
+
+   /***************GRID***************/
+}
+.grid-container {
+    width: 100%;
+    /*set border box on all elements inside the grid*/
+    box-sizing: border-box;
+}
+
+/*add a clearfix hack to the rows, so we don't have to include it in the HTML everytime*/
+.row:before,
+.row:after {
+    content: "";
+    display: table; 
+    clear: both;
+}
+
+[class*='col-'] {
+    float: left;
+    min-height: 1px;
+    padding: 0.8333%
+}
+
+.col-1 {
+    width: 6.6667%; 
+}
+.col-2 {
+    width: 15.0000%; 
+}
+.col-3 {
+    width: 23.3333%;
+}
+.col-4 {
+    width: 31.6667%;
+}
+.col-5 {
+    width: 40.0000%;
+}
+.col-6 {
+    width: 48.3333%;
+}
+.col-7 {
+    width: 56.6667%
+}
+.col-8 {
+    width: 65.0000%;
+}
+.col-9 {
+    width: 73.3333%;
+}
+.col-10 {
+    width: 81.6666%
+}
+.col-11 {
+    width: 90.0000%;
+}
+.col-12 {
+    width: 98.3333%;
+}
+
+
+
+
+
+/*header*/
+.desktop-nav {
+    display: none;
+}
+
+.header-banner-home button {
+        display: none;
+    }
+
+header {
+    margin-top: 1em;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.125em;
+    margin: 0;
+    color: #000000;
+}
+
+h1:hover {
+    color: #00c8c8;
+}
+
+h1 span {
+    font-weight: 700;
+}
+
+header .col-12 {
+    display: none;
+}
+
+.catalog-nav nav {
+    text-align: center;
+}
+
+.catalog-nav ul {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.catalog-nav li{
+    display: inline-block;
+    padding: 0 2%;
+    font-size: 0.625em;
+}
+
+.hidden {
+    display: none;
+}
+
+/*catalog */
+.item {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.item p {
+    position: absolute;
+    left: 1em;
+    top: .45em;
+    margin: 0;
+    font-size: 0.8575em;
+    font-family: 'Montserrat', sans-serif;
+    color: #9a9a9a;
+}
+
+.item p>span {
+    font-variant: small-caps;
+}
+
+
+.item-info span {
+    color: white;
+    position: absolute;
+    right: .5em;
+    top: .25em;
+    text-shadow: 0px 0px 10px rgba(68, 68, 68, 0.6);
+}
+
+/*footer*/
+
+footer {
+    background-color: #f8f8f8;
+    margin-top: 1em;
+}
+
+footer nav,
+footer li {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 300;
+    list-style: none;
+    color: #727272;
+}
+
+footer li {
+    margin: 0.5em 0;
+}
+
+footer ul {
+    padding: 0;
+    font-size: 0.8750em;
+}
+
+footer h2 {
+    font-size: 0.875em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.copyright {
+    background-color: #333333; 
+    padding: .5em;
+    color: #999999;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 0.5706em;
+    text-align: center;
+    width: 100%;
+}
+
+/*banners*/
+
+.d-banners {
+    display: none;
+}
+
+.award {
+    width: 100%;
+    height: 138px;
+    background-color: #333333;
+    color: #ffffff;
+    padding-top: 2em;
+    box-sizing: border-box;
+}
+
+.award p {
+    margin: 0;
+}
+
+.award p:first-child {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700;
+    font-size: 1.5525em;
+}
+
+.award p:last-child {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.5525em;
+}
+
+.social {
+    width: 100%;
+    height: 138px;
+    background-color: #00c8c8;
+    color: #ffffff;
+    text-align: center;
+}
+
+.social span {
+    line-height: 138px;
+    margin: 0 2%;
+    color: white;
+}
+
+
+/*lookbook*/
+
+.header-banner {
+    width: 100%;
+    height: 19.4375em;
+    background-image: url(../img/lookbook-head.jpg);
+    background-position: 50%;
+    padding-top: 7.5em;
+    box-sizing: border-box;
+}
+
+.header-banner h6 {
+        color: #ffffff;
+        font-size: 2.0669em; 
+        margin:0;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    .header-banner h6>span {
+        font-weight: 700;
+    }
+
+    .header-banner h6:last-child {
+        font-size: 1.2919em;    
+    }
+.lookbook-nav nav {
+    margin-bottom: 1em;
+}
+
+.lookbook-nav ul {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.lookbook-nav li{
+    display: inline-block;
+    padding: 0 2%;
+    font-size: 0.625em;
+}
+
+.jane-lb {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+.jane-lb-content {
+    width: 35%;
+    position: absolute;
+    left: 1%;
+    top: 1%;
+}
+
+.jane-lb h2 {
+    font-size: 2.0356em;
+    text-transform: uppercase;
+    color: #575153;
+    font-weight: 700;
+    margin: 0;
+}
+
+.jane-lb h2>span {
+    font-weight: 400;
+}
+
+.jane-lb h3 {
+    font-size: 0.55125em;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.jane-lb p {
+    font-size: 0.63625em;
+    color: #8e8c8c;
+}
+
+.jane-lb button {
+    width: 10em;
+    height:3.5em;
+    font-size:0.63625em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0.875em 1.25em;
+    background-color: #e5e6e8;
+    border:solid #828283 2px;
+}
+
+.jane-lb button:hover {
+        border: none;
+        color: #ffffff;
+        background-color: #00c8c8;
+}
+
+.win .col-6:first-child {
+    box-sizing: border-box;
+    height: 24.125em;
+    background-color:  #efefed;
+    margin:0.8333%;
+}
+
+.win .col-6:first-child h2 {
+    font-size: 1.3425em;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 0.0625em
+}
+
+.win .col-6:first-child h2>span {
+    font-weight: 700;
+    color: #575153;
+}
+
+.win .col-6:first-child p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.4194em;
+    color: #8e8c8c;
+}
+
+.win .col-6:first-child p>span:nth-child(2) {
+    font-weight: 900;
+}
+
+.win .col-6:first-child p:nth-child(2) {
+    font-size: 5.82px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #575153;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.win .col-6:first-child button {
+    width: 10em;
+    height:3.5em;
+    font-size:0.4475em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0.875em 1.25em;
+    background-color: #efefed;
+    border:solid #828283 2px;
+}
+
+.win .col-6:first-child button:hover {
+        border: none;
+        color: #ffffff;
+        background-color: #00c8c8;
+}
+
+.win .col-6:first-child h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #00c8c8;
+    text-transform: uppercase;
+    margin:0;
+    font-size: 5.925em; 
+    display: block;
+    line-height: 1em;
+}
+
+.win .col-6:first-child h4:last-child {
+    font-size: 2.0131em;
+    letter-spacing: 0.25em 
+    line-height: 1em;
+    margin-left:1em;
+}
+
+.win .col-9 {
+    display: none;
+}
+
+.win .col-3 {
+    display: none;
+}
+
+/*DESKTOP VIEW*/
+
+@media only screen and (min-width: 1400px) {
+    .hamburger {
+        display: none;
+    }
+
+    .colgroup {
+        float: left;
+        width: 50%;
+    }
+
+    section {
+        width: 1240px;
+        height: inherit;
+        margin: 0 auto;
+    }
+
+    .header-banner-home {
+        background-image: url(../img/desktop-header.jpg);
+        background-color: #f8f8f8;
+        background-position: 45% 0;
+        background-repeat: no-repeat;
+        height: 38em;
+    }
+    .header-banner-home header {
+        margin: 0;
+        padding-top: 1em;
+        height: inherit;
+    }
+
+    header .col-12 {
+        display: inline;
+    }
+
+    .catalog-nav {
+        margin-bottom: 1em;
+    }
+
+    .catalog-nav ul {
+        text-align: left;
+    }
+
+    .catalog-nav ul > li:first-child {
+        padding-left: 0;
+    }
+
+    .desktop-nav {
+        display: inline-block;
+        text-align: right;
+    }
+
+    .desktop-nav ul {
+        padding: 0;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+    }
+
+    .desktop-nav li{
+        display: inline-block;
+        padding: 0 2%;
+        font-size: 0.625em;
+        font-weight: 400;
+    }
+
+    .mobile-nav {
+            display: none;
+        }
+
+    header {
+        margin-bottom: 2em;
+    }
+
+    header h2 {
+        font-size:19.375em;
+        padding: 0;
+        letter-spacing: .5em;
+        margin: 0;
+        text-align: center;
+        color: #575153;
+    }
+
+    header button{
+        width: 20em;
+        height:3.5em;
+        font-size:0.63625em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 0.875em 1.25em;
+        background-color: #f8f8f8;
+        border:solid #828283 2px;
+        position: relative;
+        left: 70%;
+        top: 65%;
+        display: block;
+    }
+
+    button:hover {
+        border: none;
+        color: #ffffff;
+        background-color: #00c8c8;
+    }
+
+    footer {
+        margin-top: 5em;
+    }
+
+    .m-banners {
+    display: none;
+    }
+
+    .d-banners {
+    display: inline-block;
+    }
+
+    /*lookbook*/
+
+    .header-banner {
+    width: 100%;
+    height: 19.4375em;
+    background-image: url(../img/lookbook-head-desktop.jpg);
+    background-position: 50%;
+    padding-top: 7.5em;
+    box-sizing: border-box;
+    }
+
+    .lookbook-nav {
+        margin-bottom: 1em;
+    }
+
+    .lookbook-nav ul {
+        text-align: left;
+    }
+
+    .lookbook-nav ul > li:first-child {
+        padding-left: 0;
+    }
+
+    .win .col-6 {
+        display: none;
+    }
+
+    .win .col-3 {
+        display: inline-block;
+    }
+
+    .win .col-9 {
+        display: inline-block;
+        background-image: url(../img/win-desktop.jpg);
+        background-repeat: no-repeat;
+        position: relative;
+        height: 21.25em;
+    }
+
+    .win .col-9 h2 {
+        font-size: 2.1125em;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        margin: 0;
+        font-weight: 300;
+        letter-spacing: 0.0625em
+    }
+
+    .win .col-9 h2>span {
+        font-weight: 700;
+        color: #575153;
+    }
+
+    .win .col-9 p:nth-child(2) {
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.571875em;
+        color: #8e8c8c;
+        text-transform: uppercase;
+    }
+
+    .win .col-9 p:nth-child(3) {
+        width: 40%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.66em;
+    }
+
+    .win .col-9 p:nth-child(3) > span:last-child{
+        font-weight: 900;
+    }
+
+    .win .col-9 p:nth-child(4) {
+        width: 40%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.66em;
+    }
+
+    .win .col-9 button {
+    width: 10em;
+    height:3.5em;
+    font-size:0.704375em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0.875em 1.25em;
+    background-color: #efefed;
+    border:solid #828283 2px;
+}
+
+   .win .col-9 button:hover {
+            border: none;
+            color: #ffffff;
+            background-color: #00c8c8;
+    }
+
+    .win .col-9 h4 {
+        color: #00c8c8;
+        position: absolute;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .win .col-9 h4:first-of-type {
+        font-size: 8.80125em;
+        right: 1%;
+        bottom: 15%;
+    }
+
+    .win .col-9 h4:last-child {
+        font-size: 3.168125em;
+        right: 1%;
+        bottom: 8%;
+    }
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
